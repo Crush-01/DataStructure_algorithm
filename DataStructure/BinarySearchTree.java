@@ -1,4 +1,4 @@
-package data_structure_offer;
+package data_structure_offer.DataStructure;
 //二分查找树
 public class BinarySearchTree {
     int data;
@@ -16,7 +16,7 @@ public class BinarySearchTree {
         }
         node.in(node);
     }
-    public void insert(BinarySearchTree root,int data){
+    public void insert(BinarySearchTree root, int data){
         if(root!=null){
             if(root.data<data){
                 if(root.right==null){

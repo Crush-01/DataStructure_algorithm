@@ -1,4 +1,4 @@
-package data_structure_offer;
+package data_structure_offer.offer;
 
 public class ListNode {
     int val;
