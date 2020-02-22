@@ -44,7 +44,7 @@ public class KMP {
                     next[j+1] = k+ 1;              //也就是k=k+1;
                     break;
                 } else {
-                    k=next[k]; //如果匹配失败，k就等于上一次匹配成功时存入的值
+                    k=next[k]; //如果匹配失败，k就等于前一个字符对应的next数组的值
                 }
             }
         }
