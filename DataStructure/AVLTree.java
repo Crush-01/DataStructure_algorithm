@@ -79,7 +79,7 @@ public class AVLTree<T extends Comparable<T>> {
         AVLTreeNode<T> rotate=node.left;  //node为不平衡的根节点，n为旋转中心的节点
         node.left=rotate.right;
         rotate.right=node;
-        node.height=max(height(node.left),height(node.right))+1; //node升高了一个位置
+        node.height=max(height(node.left),height(node.right))+1; //node比左/右高度高1位
         rotate.height=max(height(rotate.left),node.height)+1;
         return rotate;
     }
